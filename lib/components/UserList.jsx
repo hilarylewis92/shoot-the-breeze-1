@@ -12,14 +12,14 @@ export default class UserList extends Component {
 
   render() {
     return (
-      <aside className="user-list">
+      <div id="user-list">
         <h3>Users</h3>
         <ul>
           {this.displayUsers.map(u => {
             return <li key= {u.userName}>{u.userName} ({u.email})</li>
           })}
         </ul>
-      </aside>
+      </div>
     )
   }
 }

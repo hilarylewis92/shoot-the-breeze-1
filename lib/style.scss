@@ -10,6 +10,11 @@ body {
   width: 100vw;
 }
 
+.main {
+  display: flex;
+
+}
+
 .LoginStatus {
   background-color: $dark-gray;
   color: $white;
@@ -27,7 +32,7 @@ body {
 
 .message-field {
   width: 70vw;
-  display: inline-block;
+
 }
 
 .single-message{
@@ -38,11 +43,12 @@ body {
   margin: 10px;
 }
 
-.user-list {
+#user-list {
   background-color: $light-gray;
   width: 30vw;
-  display: inline-block;
   height: 100%;
+  align-self: stretch;
+  display: flex;
 }
 
 
