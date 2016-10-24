@@ -1,126 +1,102 @@
 @import 'reset.scss';
 @import 'variables.scss';
 
-body {
+* {
   font-family: $main-text-family;
   font-size: 18px;
 }
 
-.Application {
-  width: 100vw;
-}
-
-.main {
-  display: flex;
-
-}
-
-.LoginStatus {
-  background-color: $dark-gray;
-  color: $white;
+.input-bar, .filter-bar {
+  background-color: $color-header-footer-bar;
   height: 53px;
-  font-size: 20px;
-  padding-left: 10px;
-  padding-top: 28px;
-  font-weight: 200;
 }
 
-.LogIn-btn {
-  background-color: $green;
+.submit-btn, .clear-btn, .LogIn-btn{
+  position: relative;
   color: $white;
-}
-
-.message-field {
-  width: 70vw;
-
-}
-
-.single-message{
-  margin: 30px;
-}
-
-.timestamp {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 80px;
+  float: right;
   margin: 10px;
-}
-
-#user-list {
-  background-color: $light-gray;
-  width: 30vw;
-  height: 100%;
-  align-self: stretch;
-  display: flex;
-}
-
-
-.submit-btn {
-
-  position: relative;
-  background-color: $green;
-  color: $white;
-  height: 30px;
-  width: 80px;
-  border-radius: 5px;
-  border: none;
-  left: 65px;
-  top: 10px;
-  font-size: 16px;
-  outline: none;
-  &:hover {
-    color: $green;
-    background-color: $white;
-  }
-  &:disabled {
-    background-color: $light-gray;
-    color: $white;
-  }
-}
-
-
-
-.clear-btn {
-  position: relative;
-  background-color: $red;
-  color: white;
-  font-size: 16px;
-  height: 30px;
-  width: 80px;
-  border-radius: 5px;
-  border: none;
-  top: 10px;
-  left: 80px;
-  outline: none;
-  &:hover {
-      color: $red;
-      background-color: $white;
-    }
     &:disabled {
       background-color: $light-gray;
       color: $white;
     }
+  }
+
+.submit-btn, .LogIn-btn{
+  background-color: $color-submit-btn;
+  margin-right: 10px;
+  &:hover {
+    color: $green;
+    background-color: $white;
+    }
+  }
+
+.clear-btn{
+  background-color: $color-clear-btn;
+    &:hover {
+      color: $red;
+      background-color: $white;
+    }
+  }
+
+  .character-count {
+    color: $white;
+    margin: 30px;
+  }
+
+  #message-input, #filter-input{
+    background-color: $light-gray;
+    color: $color-input-text;
+    height: 30px;
+    width: 60vw;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 20px;
+    padding-left: 10px;
+  }
+
+  .title{
+    color: $white;
+    padding: 20px;
+  }
+
+.LoginStatus {
+  background-color: $color-login-status;
+  color: $white;
+  height: 40px;
+  font-size: 20px;
+  padding: 25px 0px 0px 20px;
+  font-weight: 150;
+}
+
+.message-field {
+  width: 70vw;
+  display: inline-block;
+}
+
+.single-message{
+  margin: 20px;
+}
+
+.timestamp {
+  margin-right: 20px;
 }
 
 .user-display {
   font-weight: bold;
 }
 
-.input-bar {
-  background-color: $dark-blue;
-  height: 53px;
-  position: relative;
-}
-
-#message-input {
-  position: relative;
+#user-list {
   background-color: $light-gray;
-  color: $dark-blue;
-  height: 30px;
-  width: 60vw;
-  border-radius: 5px;
-  left: 10px;
-  top: 10px;
-  border: none;
-  font-size: 16px;
-  padding-left: 15px;
+  width: 30vw;
+  height: 100vh;
+  float: right;
+  color: $white;
 }
 
 .timestamp {
@@ -134,21 +110,11 @@ body {
 
 .message-content {
   color: $dark-blue;
-  margin-left: 10px;
 }
 
 ::-webkit-input-placeholder {
   color: $dark-blue;
   font-size: 16px;
-
-}
-
-.character-count {
-  color: $white;
-  font-family: $main-text-family;
-  position: absolute;
-  left: 905px;
-  top: 18px;
 }
 
 #new-message--content {
