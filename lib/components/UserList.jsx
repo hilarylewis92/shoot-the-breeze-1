@@ -16,18 +16,6 @@ export default class UserList extends Component {
     return sortedUniqBy(findUser, 'userName');
   }
 
-  // render() {
-  //   return (
-  //     <div id="user-list">
-  //       <h3>Users</h3>
-  //       <ul>
-  //         {this.displayUsers.map(u => {
-  //           return <li key= {u.createdAt}>{u.userName} ({u.email})</li>
-  //         })}
-  //       </ul>
-  //     </div>
-  //   )
-  // }
   render() {
     const{userFilter} = this.props;
 
