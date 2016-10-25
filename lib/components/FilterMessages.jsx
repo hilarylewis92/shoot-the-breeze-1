@@ -20,13 +20,15 @@ export default class FilterMessages extends Component {
         />
 
         <span>
-          <button className='sort-btn'
+          <button
+            className='sort-btn'
             id='up-btn'
             onClick={sortMessages}>
             Sort &uarr;
           </button>
 
-          <button className='sort-btn'
+          <button
+            className='sort-btn'
             id='down-btn'
             onClick={sortMessages}>
             Sort &darr;
