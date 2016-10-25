@@ -5,6 +5,14 @@ import moment from 'moment';
 var _ = require('lodash');
 
 export default class FilterMessages extends Component {
+  // toggleSortBtn() {
+  //   if(disabled === true){
+  //     return false;
+  //   }else{
+  //     return true;
+  //   }
+  // }
+
   render(){
     const {onFilterChange, sortMessages} = this.props;
 
@@ -20,13 +28,15 @@ export default class FilterMessages extends Component {
         />
 
         <span>
-          <button className='sort-btn'
+          <button
+            className='sort-btn'
             id='up-btn'
             onClick={sortMessages}>
             Sort &uarr;
           </button>
 
-          <button className='sort-btn'
+          <button
+            className='sort-btn'
             id='down-btn'
             onClick={sortMessages}>
             Sort &darr;
