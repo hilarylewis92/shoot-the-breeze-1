@@ -5,14 +5,6 @@ import moment from 'moment';
 var _ = require('lodash');
 
 export default class FilterMessages extends Component {
-  // toggleSortBtn() {
-  //   if(disabled === true){
-  //     return false;
-  //   }else{
-  //     return true;
-  //   }
-  // }
-
   render(){
     const {onFilterChange, sortMessages} = this.props;
 
