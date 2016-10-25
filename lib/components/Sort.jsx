@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { sortedUniqBy } from 'lodash';
-import DisplayMessages from './DisplayMessages';
 
-// sort buttions go here in html, and then connect to app
+export default class Sort extends Component {
+
+  render() {
+    return (
+      <div>
+        <button className='sort-btn' id='up-btn' onClick={this.props.sortMessages}>  Sort &uarr; </button>
+        <button className='sort-btn' id='down-btn' onClick={this.props.sortMessages}>  Sort &darr; </button>
+      </div>
+    )
+  }
+}
+
+
+//create a way to disable buttons
