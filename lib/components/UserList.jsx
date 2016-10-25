@@ -11,18 +11,30 @@ export default class UserList extends Component {
         email: m.user.email
       };
     });
-    
+
     var findUser = uniqBy(users, 'id');
     return sortedUniqBy(findUser, 'userName');
   }
 
+  // render() {
+  //   return (
+  //     <div id="user-list">
+  //       <h3>Users</h3>
+  //       <ul>
+  //         {this.displayUsers.map(u => {
+  //           return <li key= {u.createdAt}>{u.userName} ({u.email})</li>
+  //         })}
+  //       </ul>
+  //     </div>
+  //   )
+  // }
   render() {
     return (
       <div id="user-list">
         <h3>Users</h3>
         <ul>
           {this.displayUsers.map(u => {
-            return <li key= {u.createdAt}>{u.userName} ({u.email})</li>
+            return <li key= {u.createdAt}><button>{u.userName} ({u.email})</button></li>
           })}
         </ul>
       </div>
