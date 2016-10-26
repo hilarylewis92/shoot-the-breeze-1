@@ -24,16 +24,18 @@ export default class InputForm extends Component {
 
     return (
       <div className = "input-bar">
-        <input id = "message-input"
-          placeholder="Message"
-          value={draftedMessage}
-          onChange={onDraftedMessageChange}
-        />
+        <div className = "line-one">
+          <input id = "message-input"
+            placeholder="Message"
+            value={draftedMessage}
+            onChange={onDraftedMessageChange}
+          />
 
-        <span
-          className = 'character-count'>
-          {140 - draftedMessage.length}
-        </span>
+          <span
+            className = 'character-count'>
+            {140 - draftedMessage.length}
+          </span>
+        </div>
 
         <button
           className = 'clear-btn'
