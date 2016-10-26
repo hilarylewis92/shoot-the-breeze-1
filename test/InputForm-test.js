@@ -12,4 +12,5 @@ describe('InputForm', () => {
     const wrapper = shallow(<InputForm />)
     assert.equal(wrapper.type(), 'div');
   });
+
 });

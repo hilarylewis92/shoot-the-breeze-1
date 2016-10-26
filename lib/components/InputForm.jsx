@@ -18,7 +18,6 @@ export default class InputForm extends Component {
 
   render(){
     const {draftedMessage, onDraftedMessageChange, onMessageSubmit, clearField} = this.props;
-
     const disabledSubmit = this.toggleSubmitBtn(draftedMessage);
     const disabledClear = this.toggleClearBtn(draftedMessage);
 
