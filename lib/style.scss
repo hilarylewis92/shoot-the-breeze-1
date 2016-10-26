@@ -1,18 +1,19 @@
 @import 'reset.scss';
 @import 'variables.scss';
+@import 'input-form.scss';
 
 * {
   font-family: $main-text-family;
   font-size: 18px;
 }
 
-.InputForm, .FilterMessages {
-  background-color: $color-header-footer-bar;
-  height: $input-field-height;
-  @media screen and (max-width: $break){
-    height: 2 * $input-field-height;
-  }
-}
+// .InputForm, .FilterMessages {
+//   background-color: $color-header-footer-bar;
+//   height: $input-field-height;
+//   @media screen and (max-width: $break){
+//     height: 2 * $input-field-height;
+//   }
+// }
 
 .sort-btn {
   float: right;
