@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import firebase, { signIn, signOut } from '../firebase';
 
-export default class LoggedInStatus extends Component {
-  render(){
-    const {user} = this.props;
+const LoggedInStatus = ({user}) => {
 
     return (
       <div className="LoginStatus">
@@ -19,4 +17,7 @@ export default class LoggedInStatus extends Component {
       </div>
     );
   }
-}
+
+
+
+module.exports = LoggedInStatus
