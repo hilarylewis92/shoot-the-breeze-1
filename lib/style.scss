@@ -55,6 +55,9 @@
   width: $button-width;
   float: right;
   margin-right: $main-margin;
+  @media screen and (max-width: $break){
+    visibility: hidden;
+  }
 }
 
 .submit-btn, .LogIn-btn{
@@ -91,14 +94,22 @@
     border: none;
     margin: $main-margin 20px;
     padding-left: $main-margin;
-    // @media screen and (max-width: $break){
-    //   width: 75vw;
-    // }
+  }
+  #filter-input{
+    @media screen and (max-width: $break){
+      margin-left: auto;
+      margin-right: auto;
+      float: inherit;
+      width: 80vw;
+    }
   }
 
   .title{
     color: $white;
     padding: 20px;
+    @media screen and (max-width: $break){
+      visibility: hidden;
+    }
   }
 
 .LoginStatus {
@@ -108,10 +119,9 @@
   font-size: 20px;
   padding: 25px 0px 0px 20px;
   font-weight: 150;
-  // @media screen and (max-width: $break){
-  //   width: 30vw;
-  //   margin: 0px 30px 0px 0px;
-  // }
+  @media screen and (max-width: $break){
+    visibility: hidden;
+  }
 }
 
 .user-display {
@@ -145,6 +155,9 @@
   }
   li{
     margin: 20px;
+  }
+  @media screen and (max-width: $break){
+    visibility: hidden;
   }
 }
 
