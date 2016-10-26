@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { uniqBy, sortedUniqBy, filter } from 'lodash';
+// import ReactDOM from 'react-dom';
+import { uniqBy, sortedUniqBy, map } from 'lodash';
 
 export default class UserList extends Component {
 
