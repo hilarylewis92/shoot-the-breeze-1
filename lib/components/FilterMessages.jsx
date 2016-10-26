@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import firebase, { reference, signIn } from '../firebase';
-import { pick, map, extend, filter } from 'lodash';
-import moment from 'moment';
-var _ = require('lodash');
 
 export default class FilterMessages extends Component {
+  
   render(){
     const {onFilterChange, sortMessages} = this.props;
 

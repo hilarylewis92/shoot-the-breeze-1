@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import firebase, { reference, signIn, signOut } from '../firebase';
-import { pick, map, extend } from 'lodash';
-import moment from 'moment';
+import firebase, { signIn, signOut } from '../firebase';
 
 export default class LoggedInStatus extends Component {
   render(){
