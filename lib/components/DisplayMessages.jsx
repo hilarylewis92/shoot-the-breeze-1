@@ -9,13 +9,13 @@ export default class DisplayMessages extends Component {
 
     return(
       <ul className='message-field'>
-        {messages.map(m =>{
+        {messages.map(message =>{
           return (
-            <li className='single-message' key={m.key}>
-              <span className = 'timestamp'>{m.createdAt}</span>
-              <span className = 'username'>{m.user.displayName}</span>
+            <li className='single-message' key={message.key}>
+              <span className = 'timestamp'>{message.createdAt}</span>
+              <span className = 'username'>{message.user.displayName}</span>
               <br/>
-              <span className= 'message-content'>{m.content}</span>
+              <span className= 'message-content'>{message.content}</span>
             </li>
           );
         })
