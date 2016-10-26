@@ -24,6 +24,11 @@
   height: $button-height;
   width: $button-width;
   margin: $main-margin;
+  @media screen and (max-width: $break){
+    width: 30vw;
+    float: left;
+    margin-top: 20px
+  }
 }
 
 .submit-btn, .clear-btn{
@@ -92,7 +97,7 @@
   }
   #filter-input{
     @media screen and (max-width: $break){
-      margin: 5px;
+      margin: -15px 5px;
       width: 90vw;
     }
   }
@@ -175,7 +180,6 @@
     width: 0px;
   }
 }
-
 
 .timestamp {
   color: $purple;
